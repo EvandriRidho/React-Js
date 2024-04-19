@@ -1,13 +1,13 @@
-function Cup({ guest }) {
-  return <h2>Cangkir teh untuk tamu #{guest}</h2>;
-}
+import Gallery from "./gallery";
+import { Profile } from "./profile";
 
-export default function TeaSet() {
+function App() {
   return (
-    <>
-      <Cup guest={1} />
-      <Cup guest={2} />
-      <Cup guest={3} />
-    </>
+    <section>
+      <Profile />
+      <Gallery />
+    </section>
   );
 }
+
+export default App;
